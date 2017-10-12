@@ -1,0 +1,35 @@
+[10/11/2017 18:41] seed@ubuntu:~/Desktop/cs5460/assn4/part4/task1$ openssl ca -in server.csr -out server.crt -cert ca.crt -keyfile ca.key -config openssl.cnf
+Using configuration from openssl.cnf
+Enter pass phrase for ca.key:
+Check that the request matches the signature
+Signature ok
+Certificate Details:
+        Serial Number: 4096 (0x1000)
+        Validity
+            Not Before: Oct 12 01:41:41 2017 GMT
+            Not After : Oct 12 01:41:41 2018 GMT
+        Subject:
+            countryName               = US
+            stateOrProvinceName       = UT
+            organizationName          = CS5460
+            commonName                = PKILabServer.com
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Comment: 
+                OpenSSL Generated Certificate
+            X509v3 Subject Key Identifier: 
+                B2:C1:86:9B:BF:D6:D2:8B:78:C0:E7:90:B6:20:6F:59:B3:93:05:44
+            X509v3 Authority Key Identifier: 
+                keyid:51:4A:C1:F6:7D:2D:7E:04:58:38:AA:3D:6F:72:72:A7:17:40:A4:36
+
+Certificate is to be certified until Oct 12 01:41:41 2018 GMT (365 days)
+Sign the certificate? [y/n]:y
+
+
+1 out of 1 certificate requests certified, commit? [y/n]y
+Write out database with 1 new entries
+Data Base Updated
+unable to write 'random state'
+[10/11/2017 18:41] seed@ubuntu:~/Desktop/cs5460/assn4/part4/task1$ 
+
