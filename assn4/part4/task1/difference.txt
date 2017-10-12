@@ -1,0 +1,44 @@
+1c1
+< s_server -cert server.pem -www
+---
+> s_server -cert server.pem -www 
+44,58c44
+< Ciphers common between both SSL end points:
+< ECDHE-ECDSA-AES256-SHA     ECDHE-RSA-AES256-SHA       DHE-RSA-CAMELLIA256-SHA   
+< DHE-DSS-CAMELLIA256-SHA    DHE-RSA-AES256-SHA         DHE-DSS-AES256-SHA        
+< ECDH-RSA-AES256-SHA        ECDH-ECDSA-AES256-SHA      CAMELLIA256-SHA           
+< AES256-SHA                 ECDHE-ECDSA-RC4-SHA        ECDHE-ECDSA-AES128-SHA    
+< ECDHE-RSA-RC4-SHA          ECDHE-RSA-AES128-SHA       DHE-RSA-CAMELLIA128-SHA   
+< DHE-DSS-CAMELLIA128-SHA    DHE-RSA-AES128-SHA         DHE-DSS-AES128-SHA        
+< ECDH-RSA-RC4-SHA           ECDH-RSA-AES128-SHA        ECDH-ECDSA-RC4-SHA        
+< ECDH-ECDSA-AES128-SHA      SEED-SHA                   CAMELLIA128-SHA           
+< RC4-SHA                    RC4-MD5                    AES128-SHA                
+< ECDHE-ECDSA-DES-CBC3-SHA   ECDHE-RSA-DES-CBC3-SHA     EDH-RSA-DES-CBC3-SHA      
+< EDH-DSS-DES-CBC3-SHA       ECDH-RSA-DES-CBC3-SHA      ECDH-ECDSA-DES-CBC3-SHA   
+< DES-CBC3-SHA
+< ---
+< New, TLSv1/SSLv3, Cipher is ECDHE-RSA-AES256-SHA
+---
+> Reused, TLSv1/SSLv3, Cipher is ECDHE-RSA-AES256-SHA
+62c48
+<     Session-ID: 
+---
+>     Session-ID: B19279AE954CB9F489758BC5344640C8D0992CFA2C6A9AEE69BAA61733526653
+64c50
+<     Master-Key: 9D518B97A86EE0B0D320FE694C0269008D89751F4F914AAA39FA7EDEC0C51BEAAA00E78AC40C2AD984DA811483FA5EE4
+---
+>     Master-Key: 02871B5DF28974DF4622A2353CA8059B6AD6356BBEF658F7D72E1400BFC619F39794C12842607F958D75806C04FA1A85
+69c55
+<     Start Time: 1507775198
+---
+>     Start Time: 1507775067
+77c63
+<    1 server accepts (SSL_accept())
+---
+>    4 server accepts (SSL_accept())
+79,80c65,66
+<    1 server accepts that finished
+<    0 session cache hits
+---
+>    4 server accepts that finished
+>    3 session cache hits
