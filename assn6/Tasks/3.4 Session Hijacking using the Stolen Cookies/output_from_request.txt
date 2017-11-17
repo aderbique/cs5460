@@ -1,0 +1,121 @@
+Response Code = 200
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="ElggRelease" content="1.8.19" />
+	<meta name="ElggVersion" content="2014012000" />
+	<title>XSS Lab Site: Samy</title>
+	<link rel="SHORTCUT ICON" href="http://www.xsslabelgg.com/_graphics/favicon.ico" />
+	<link rel="stylesheet" href="http://www.xsslabelgg.com/cache/css/default/elgg.1410864370.css" type="text/css" />
+
+	<!--[if gt IE 7]>
+		<link rel="stylesheet" type="text/css" href="http://www.xsslabelgg.com/cache/css/default/ie.1410864370.css" />
+	<![endif]-->
+	<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="http://www.xsslabelgg.com/cache/css/default/ie7.1410864370.css" />
+	<![endif]-->
+	<!--[if IE 6]>
+		<link rel="stylesheet" type="text/css" href="http://www.xsslabelgg.com/cache/css/default/ie6.1410864370.css" />
+	<![endif]-->
+
+	<script type="text/javascript" src="http://www.xsslabelgg.com/vendors/jquery/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript" src="http://www.xsslabelgg.com/vendors/jquery/jquery-ui-1.8.16.min.js"></script>
+	<script type="text/javascript" src="http://www.xsslabelgg.com/cache/js/default/elgg.1410864370.js"></script>
+
+<script type="text/javascript">
+// <![CDATA[
+	/**
+ * Don't want to cache these -- they could change for every request
+ */
+elgg.config.lastcache = 1410864370;
+elgg.config.viewtype = 'default';
+elgg.config.simplecache_enabled = 1;
+
+elgg.security.token.__elgg_ts = 1510946591;
+elgg.security.token.__elgg_token = '367debb24a78f75c862c74d2636b5a64';
+
+elgg.page_owner =  {"guid":42,"type":"user","subtype":false,"time_created":"1410961685","time_updated":"1410961693","container_guid":"0","owner_guid":"0","site_guid":"1","name":"Samy","username":"samy","language":"en","url":"http:\/\/www.xsslabelgg.com\/profile\/samy"};
+//Before the DOM is ready, but elgg's js framework is fully initalized
+elgg.trigger_hook('boot', 'system');// ]]>
+</script>
+
+	<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://www.xsslabelgg.com/profile/samy?view=foaf" />
+</head>
+<body>
+<div class="elgg-page elgg-page-default">
+	<div class="elgg-page-messages">
+		<ul class="elgg-system-messages"><li class="hidden"></li></ul>	</div>
+	
+		
+	<div class="elgg-page-header">
+		<div class="elgg-inner">
+			
+<h1>
+	<a class="elgg-heading-site" href="http://www.xsslabelgg.com/">
+		XSS Lab Site	</a>
+</h1>
+<div id="login-dropdown">
+	<a href="http://www.xsslabelgg.com/login#login-dropdown-box" rel="popup" class="elgg-button elgg-button-dropdown">Log in</a><div class="elgg-module  elgg-module-dropdown" id="login-dropdown-box"><div class="elgg-body"><form method="post" action="http://www.xsslabelgg.com/action/login" class="elgg-form elgg-form-login"><fieldset><input type="hidden" name="__elgg_token" value="367debb24a78f75c862c74d2636b5a64" /><input type="hidden" name="__elgg_ts" value="1510946591" />
+<div>
+	<label>Username or email</label>
+	<input type="text" value="" name="username" class="elgg-input-text elgg-autofocus" /></div>
+<div>
+	<label>Password</label>
+	
+<input type="password" value="" name="password" class="elgg-input-password" />
+</div>
+
+
+<div class="elgg-foot">
+	<label class="mtm float-alt">
+		<input type="checkbox" name="persistent" value="true" />
+		Remember me	</label>
+	
+	<input type="submit" value="Log in" class="elgg-button elgg-button-submit" />
+	
+	<input type="hidden" name="returntoreferer" value="true" />
+	<ul class="elgg-menu elgg-menu-general mtm">
+	<li><a class="registration_link" href="http://www.xsslabelgg.com/register">Register</a></li>		<li><a class="forgot_link" href="http://www.xsslabelgg.com/forgotpassword">
+			Lost password		</a></li>
+	</ul>
+</div>
+</fieldset></form></div></div></div>
+<ul class="elgg-menu elgg-menu-site elgg-menu-site-default clearfix"><li class="elgg-menu-item-activity"><a href="http://www.xsslabelgg.com/activity">Activity</a></li><li class="elgg-menu-item-blog"><a href="http://www.xsslabelgg.com/blog/all">Blogs</a></li><li class="elgg-menu-item-bookmarks"><a href="http://www.xsslabelgg.com/bookmarks/all">Bookmarks</a></li><li class="elgg-menu-item-file"><a href="http://www.xsslabelgg.com/file/all">Files</a></li><li class="elgg-menu-item-groups"><a href="http://www.xsslabelgg.com/groups/all">Groups</a></li><li class="elgg-more"><a href="#">More</a><ul class="elgg-menu elgg-menu-site elgg-menu-site-more"><li class="elgg-menu-item-members"><a href="http://www.xsslabelgg.com/members">Members</a></li><li class="elgg-menu-item-pages"><a href="http://www.xsslabelgg.com/pages/all">Pages</a></li><li class="elgg-menu-item-thewire"><a href="http://www.xsslabelgg.com/thewire/all">The Wire</a></li></ul></li></ul>
+<form class="elgg-search elgg-search-header" action="http://www.xsslabelgg.com/search" method="get">
+	<fieldset>
+		<input type="text" class="search-input" size="21" name="q" value="Search" onblur="if (this.value=='') { this.value='Search' }" onfocus="if (this.value=='Search') { this.value='' };" />
+		<input type="hidden" name="search_type" value="all" />
+		<input type="submit" value="Go" class="search-submit-button" />
+	</fieldset>
+</form>
+		</div>
+	</div>
+	<div class="elgg-page-body">
+		<div class="elgg-inner">
+			<div class="elgg-layout elgg-layout-one-column clearfix">
+	<div class="elgg-body elgg-main">
+	<div class="profile elgg-col-2of3">
+	<div class="elgg-inner clearfix">
+		
+<div id="profile-owner-block">
+	<div class="elgg-avatar elgg-avatar-large">
+<a><img src="http://www.xsslabelgg.com/_graphics/spacer.gif" alt="Samy" title="Samy" class="" style="background: url(http://www.xsslabelgg.com/_graphics/icons/user/defaultlarge.gif) no-repeat;"/></a></div>
+
+	
+	<ul class="elgg-menu elgg-menu-owner-block profile-content-menu elgg-menu-owner-block-default"><li class="elgg-menu-item-blog"><a href="http://www.xsslabelgg.com/blog/owner/samy">Blogs</a></li><li class="elgg-menu-item-bookmarks"><a href="http://www.xsslabelgg.com/bookmarks/owner/samy">Bookmarks</a></li><li class="elgg-menu-item-file"><a href="http://www.xsslabelgg.com/file/owner/samy">Files</a></li><li class="elgg-menu-item-pages"><a href="http://www.xsslabelgg.com/pages/owner/samy">Pages</a></li><li class="elgg-menu-item-thewire"><a href="http://www.xsslabelgg.com/thewire/owner/samy">Wire posts</a></li></ul>
+	
+</div>
+		<div id="profile-details" class="elgg-body pll"><h2>Samy</h2></div>	</div>
+</div><div class="elgg-col-1of3 elgg-widgets" id="elgg-widget-col-1"></div><div class="elgg-col-1of3 elgg-widgets" id="elgg-widget-col-2"></div><div class="elgg-col-1of3 elgg-widgets" id="elgg-widget-col-3"></div>
+<div id="elgg-widget-loader" class="elgg-ajax-loader hidden"></div>
+	</div>
+</div>		</div>
+	</div>
+	<div class="elgg-page-footer">
+		<div class="elgg-inner">
+			<div class="mts clearfloat float-alt"><a href="http://elgg.org" class=""><img src="http://www.xsslabelgg.com/_graphics/powered_by_elgg_badge_drk_bckgnd.gif" alt="Powered by Elgg" width="106" height="15" /></a></div>		</div>
+	</div>
+</div>
+</body>
+</html>
