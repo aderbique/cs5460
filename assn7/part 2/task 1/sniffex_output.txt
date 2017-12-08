@@ -1,0 +1,87 @@
+sniffex - Sniffer example using libpcap
+Copyright (c) 2005 The Tcpdump Group
+THERE IS ABSOLUTELY NO WARRANTY FOR THIS PROGRAM.
+
+Device: eth13
+Number of packets: 10
+Filter expression: ip
+
+Packet number 1:
+       From: 10.0.2.15
+         To: 13.33.124.26
+   Protocol: TCP
+   Src port: 36045
+   Dst port: 443
+   Payload (37 bytes):
+00000   15 03 01 00 20 ca 01 fd  2d 22 51 74 a6 e4 8b f0    .... ...-"Qt....
+00016   18 8f 4e 37 77 d2 0c 67  ac b1 7e e7 0e af da 18    ..N7w..g..~.....
+00032   ab e7 a9 6b 1f                                      ...k.
+
+Packet number 2:
+       From: 13.33.124.26
+         To: 10.0.2.15
+   Protocol: TCP
+   Src port: 443
+   Dst port: 36045
+
+Packet number 3:
+       From: 10.0.2.15
+         To: 13.33.124.26
+   Protocol: TCP
+   Src port: 36045
+   Dst port: 443
+
+Packet number 4:
+       From: 13.33.124.26
+         To: 10.0.2.15
+   Protocol: TCP
+   Src port: 443
+   Dst port: 36045
+
+Packet number 5:
+       From: 13.33.124.26
+         To: 10.0.2.15
+   Protocol: TCP
+   Src port: 443
+   Dst port: 36045
+
+Packet number 6:
+       From: 10.0.2.15
+         To: 13.33.124.26
+   Protocol: TCP
+   Src port: 36045
+   Dst port: 443
+
+Packet number 7:
+       From: 10.0.2.15
+         To: 172.217.14.78
+   Protocol: TCP
+   Src port: 40762
+   Dst port: 443
+   Payload (37 bytes):
+00000   15 03 01 00 20 ec e3 c8  a7 83 7b d5 cd a8 93 ad    .... .....{.....
+00016   1e 9a 60 57 f0 79 d2 57  09 c1 51 c7 21 b2 5e 67    ..`W.y.W..Q.!.^g
+00032   f6 44 35 3c 2f                                      .D5</
+
+Packet number 8:
+       From: 10.0.2.15
+         To: 172.217.14.78
+   Protocol: TCP
+   Src port: 40762
+   Dst port: 443
+
+Packet number 9:
+       From: 172.217.14.78
+         To: 10.0.2.15
+   Protocol: TCP
+   Src port: 443
+   Dst port: 40762
+
+Packet number 10:
+       From: 172.217.14.78
+         To: 10.0.2.15
+   Protocol: TCP
+   Src port: 443
+   Dst port: 40762
+
+Capture complete.
